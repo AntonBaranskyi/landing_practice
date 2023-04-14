@@ -7,40 +7,63 @@
     <title></title>
     <link rel="stylesheet" href="Style/Scss.css" />
     <link rel="stylesheet" href="Style/header.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   </head>
   <body>
     <!-- Header -->
+    <div class="wrapper">
+      <header>
+        <div class="header-photo">
+          <img
+                  class="header-photo-item"
+                  src="./img/screencapture-shifton-ru-2021-08-19-11_18_59 2.png"
+                  alt="header"
+          />
+        </div>
 
-    <header>
-      <div class="header-photo">
-        <img
-          class="header-photo-item"
-          src="./img/screencapture-shifton-ru-2021-08-19-11_18_59 2.png"
-          alt="header"
-        />
-      </div>
+        <nav>
+          <ul>
+            <li><a href="#">главная</a></li>
+            <li><a href="#">тарифы</a></li>
+            <li><a href="#">возможности</a></li>
+            <li><a href="#">блог</a></li>
+            <li><a href="#">чаво</a></li>
+            <li><a href="#">вход</a></li>
+          </ul>
+        </nav>
 
-      <nav>
-        <ul>
-          <li><a href="#">главная</a></li>
-          <li><a href="#">тарифы</a></li>
-          <li><a href="#">возможности</a></li>
-          <li><a href="#">блог</a></li>
-          <li><a href="#">чаво</a></li>
-          <li><a href="#">вход</a></li>
-        </ul>
-      </nav>
+        <button class="btn-header btn">Регестрация</button>
 
-      <button class="btn-header btn">Регестрация</button>
+        <div class="language-dropdown">
+          <button class="dropdown-btn">Укр</button>
+          <ul class="dropdown-content">
+            <li><a href="#">Українська</a></li>
+            <li><a href="#">English</a></li>
+            <li><a href="#">Русский</a></li>
+          </ul>
+        </div>
+      </header>
 
-      <div class="language-dropdown">
-        <button class="dropdown-btn">Укр</button>
-        <ul class="dropdown-content">
-          <li><a href="#">Українська</a></li>
-          <li><a href="#">English</a></li>
-          <li><a href="#">Русский</a></li>
-        </ul>
-      </div>
-    </header>
+      <!--mainscreen-->
+
+      <section class="mainsreen">
+        <div class="mainsreen__img">
+          <div class="mainsreen__container">
+            <h1 class="mainsreen__title">
+              Автоматизированное составление рабочих расписаний онлайн
+            </h1>
+              <ul class="mainsreen__text">
+                <li>Экономия времени и денег</li>
+                <li>Грамотное распределение рабочей нагрузки</li>
+                <li>Построение оптимального сменного рабочего расписания для любого количества сотрудников</li>
+              </ul>
+            <div class="mainsreen__btn btn">
+              Попробовать бесплатно
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
   </body>
 </html>

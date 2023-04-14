@@ -1,11 +1,7 @@
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 78px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   background: #080702;
 }
 header img.header-photo-item {
@@ -14,8 +10,6 @@ header img.header-photo-item {
   margin: 0 228px 0 199px;
 }
 header nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   list-style: none;
 }
@@ -32,10 +26,9 @@ header nav ul li a {
 }
 header .btn-header {
   font-family: "Roboto";
-  font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  line-height: 23px;
+  background-color: #29AAE3;
   width: 157px;
   height: 47px;
   margin-right: 23px;
@@ -67,8 +60,7 @@ header .language-dropdown .dropdown-content {
   top: 30px;
   background-color: #fff;
   min-width: 160px;
-  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
 }
 header .language-dropdown .dropdown-content li a {
   display: block;
@@ -83,9 +75,5 @@ header .language-dropdown .dropdown-content li a:hover {
 header .language-dropdown:hover .dropdown-content {
   display: block;
 }
-header .btn {
-  background: #29aae3;
-  -webkit-box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.1);
-  border-radius: 26px;
-}
+
+/*# sourceMappingURL=header.css.map */
