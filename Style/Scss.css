@@ -7,6 +7,7 @@
 }
 
 *, *:before, *:after {
+  -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -111,17 +112,12 @@ h1, h2, h3, h4, h5, h6 {
 .mainsreen__text {
   font-family: "Roboto", sans-serif;
   margin-top: 32px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
   padding: 0;
   gap: 32px;
   font-size: 26px;
 }
+
+/*# sourceMappingURL=Scss.css.map */
