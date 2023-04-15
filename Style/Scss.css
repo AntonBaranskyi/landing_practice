@@ -73,10 +73,52 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
-body {
-  color: red;
+.btn {
+  line-height: 23px;
+  background-color: #000;
+  border-radius: 30px;
+  display: inline-block;
 }
 
-li {
-  color: green;
+.mainsreen__img {
+  background: url("../img/1 2.png") center center no-repeat;
+  min-height: 92.8vh;
+  background-size: cover;
+}
+.mainsreen__container {
+  max-width: 815px;
+  max-height: 375px;
+  color: white;
+  position: relative;
+  left: 202px;
+  top: 166px;
+}
+.mainsreen__title {
+  font-size: 48px;
+  font-family: "Roboto", sans-serif;
+  line-height: 56px;
+}
+.mainsreen__btn {
+  font-family: "Roboto", sans-serif;
+  margin-top: 32px;
+  font-size: 20px;
+  background-color: #54A757;
+  padding: 12px 30px 12px 30px;
+}
+.mainsreen__text {
+  font-family: "Roboto", sans-serif;
+  margin-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 0;
+  gap: 32px;
+  font-size: 26px;
 }
