@@ -1,0 +1,43 @@
+.video-content__title {
+  color: #434449;
+  padding-bottom: 50px;
+}
+.video-content__wrapper {
+  padding-bottom: 100px;
+}
+.video-content__video {
+  display: block;
+  margin: 0 auto;
+}
+.video-content .more-info__wrapper_title {
+  padding-bottom: 60px;
+}
+.video-content .more-info__title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 30px;
+  text-align: center;
+  color: #434449;
+}
+.video-content .more-info__title span {
+  color: #29aae3;
+}
+.video-content .more-info_social-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 280px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  padding-bottom: 100px;
+}
+.video-content .more-info_social-wrapper img {
+  cursor: pointer;
+}
