@@ -20,6 +20,15 @@
     grid-column-gap: 12px;
     grid-template-rows: 1fr;
     margin-bottom: 100px;
+    @media (max-width: 1250px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-gap: 10px;
+    }
+  @media (max-width: 601px) {
+    display: block;
+  }
   }
 
   &__item {

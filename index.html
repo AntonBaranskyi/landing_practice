@@ -12,41 +12,61 @@
     <link rel="stylesheet" href="Style/video.css" />
     <link rel="stylesheet" href="Style/footer.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
     <!-- Header -->
     <div class="wrapper">
-      <header>
-        <div class="header-photo">
-          <img
-            class="header-photo-item"
-            src="./img/screencapture-shifton-ru-2021-08-19-11_18_59 2.png"
-            alt="header"
-          />
-        </div>
+      <header class="header">
+        <div class="header__container">
+          <div class="header-photo">
+            <img class="header-photo-item"
+                    src="./img/screencapture-shifton-ru-2021-08-19-11_18_59 2.png"
+                    alt="header"
+            />
+          </div>
+          <div class="header__menu">
+            <nav class="header__nav">
+              <ul>
+                <li><a href="#">главная</a></li>
+                <li><a href="#">тарифы</a></li>
+                <li><a href="#">возможности</a></li>
+                <li><a href="#">блог</a></li>
+                <li><a href="#">чаво</a></li>
+                <li><a href="#">вход</a></li>
+              </ul>
+            </nav>
 
-        <nav>
-          <ul>
-            <li><a href="#">главная</a></li>
-            <li><a href="#">тарифы</a></li>
-            <li><a href="#">возможности</a></li>
-            <li><a href="#">блог</a></li>
-            <li><a href="#">чаво</a></li>
-            <li><a href="#">вход</a></li>
-          </ul>
-        </nav>
+            <button class="btn-header btn">Регестрация</button>
 
-        <button class="btn-header btn">Регестрация</button>
-
-        <div class="language-dropdown">
-          <button class="dropdown-btn">Укр</button>
-          <ul class="dropdown-content">
-            <li><a href="#">Українська</a></li>
-            <li><a href="#">English</a></li>
-            <li><a href="#">Русский</a></li>
-          </ul>
+            <div class="language-dropdown">
+              <button class="dropdown-btn">Укр</button>
+              <ul class="dropdown-content">
+                <li><a href="#">Українська</a></li>
+                <li><a href="#">English</a></li>
+                <li><a href="#">Русский</a></li>
+              </ul>
+            </div>
+            <div class="burger">
+              <span class="burger__1"></span>
+              <span class="burger__2"></span>
+              <span class="burger__3"></span>
+            </div>
+          </div>
         </div>
       </header>
+
+      <section class="sidebar" id="sidebar">
+        <ul>
+          <li><a href="">Hello</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Portfolio</a></li>
+          <li><a href="">Team</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </section>
 
       <!--mainscreen-->
 
@@ -166,7 +186,7 @@
                 </div>
               </div>
               <div class="block__img block__img-automation">
-                <img src="img/Img__1.png" alt="" />
+                <img class="img__1" src="img/Img__1.png" alt="" />
               </div>
             </div>
           </div>
@@ -176,7 +196,7 @@
             </h2>
             <div class="block__row">
               <div class="block__img block__img-optimization">
-                <img src="img/Img__2.png" alt="" />
+                <img class="img__2" src="img/Img__2.png" alt="" />
               </div>
               <div class="block__column">
                 <div class="block__text block__text-optimization">
@@ -209,7 +229,7 @@
                 </div>
               </div>
               <div class="block__img block__img-control">
-                <img src="img/Img__3.png" alt="" />
+                <img class="img__3" src="img/Img__3.png" alt="" />
               </div>
             </div>
           </div>
@@ -278,5 +298,6 @@
         </div>
       </footer>
     </div>
+    <script src="Js/Script.js"></script>
   </body>
 </html>

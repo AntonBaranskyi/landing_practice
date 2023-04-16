@@ -1,28 +1,37 @@
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.header {
   display: flex;
   height: 78px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background: #080702;
 }
-header img.header-photo-item {
-  width: 256px;
-  height: 73px;
-  margin: 0 228px 0 199px;
-}
-header nav ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.header__container {
+  width: 1400px;
+  margin: 0 auto;
   display: flex;
-  list-style: none;
+  justify-content: space-between;
+  padding: 0 100px;
 }
-header nav ul li a {
+@media (max-width: 1288px) {
+  .header__container {
+    padding: 0 20px;
+  }
+}
+.header__menu {
+  display: flex;
+  gap: 22px;
+  margin-top: 30px;
+}
+@media (max-width: 1111px) {
+  .header__menu {
+    gap: 10px;
+  }
+}
+.header .header__nav ul {
+  display: flex;
+  gap: 31px;
+}
+.header .header__nav ul li a {
   color: #fff;
-  margin-right: 31px;
-  font-family: "Noto Sans";
+  font-family: "Noto Sans", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
@@ -30,55 +39,142 @@ header nav ul li a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-header .btn-header {
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 20px;
-  background-color: #29AAE3;
-  width: 157px;
-  height: 47px;
-  margin-right: 23px;
-  color: #ffffff;
+@media (max-width: 1111px) {
+  .header .header__nav ul {
+    gap: 15px;
+  }
 }
-header .language-dropdown {
-  position: relative;
+@media (max-width: 1000px) {
+  .header .header__nav ul {
+    display: none;
+  }
 }
-header .language-dropdown .dropdown-btn {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  font-family: "Noto Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-header .language-dropdown .dropdown-btn:hover {
-  text-decoration: underline;
-}
-header .language-dropdown .dropdown-content {
+
+.dropdown-content {
   display: none;
   position: absolute;
   z-index: 1;
   top: 30px;
   background-color: #fff;
   min-width: 160px;
-  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
-header .language-dropdown .dropdown-content li a {
+.dropdown-content li a {
   display: block;
   color: #333;
   padding: 10px;
   text-decoration: none;
   font-size: 14px;
 }
-header .language-dropdown .dropdown-content li a:hover {
+.dropdown-content li a:hover {
   background-color: #f2f2f2;
 }
-header .language-dropdown:hover .dropdown-content {
-  display: block;
+
+.dropdown-btn {
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
 }
+.dropdown-btn:hover {
+  text-decoration: underline;
+}
+
+.btn-header {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  background-color: #29AAE3;
+  width: 157px;
+  height: 47px;
+  color: #ffffff;
+  position: relative;
+  top: -15px;
+}
+@media (max-width: 1000px) {
+  .btn-header {
+    display: none;
+  }
+}
+
+.burger {
+  display: none;
+  width: 50px;
+}
+.burger span {
+  display: block;
+  height: 5px;
+  width: 50px;
+  background-color: #fff;
+  transition: width 0.3s ease-in;
+  margin: 0 auto;
+}
+.burger span + span {
+  margin-top: 6px;
+}
+.burger__2 {
+  background-color: transparent !important;
+  position: relative;
+}
+.burger__2:before, .burger__2:after {
+  content: "";
+  transition: all 0.3s ease-in;
+  position: absolute;
+  display: block;
+  height: 5px;
+  width: 50px;
+  background-color: #fff;
+}
+.burger.open .burger__1,
+.burger.open .burger__3 {
+  width: 0 !important;
+}
+.burger.open .burger__2:before {
+  transform: rotate(45deg);
+}
+.burger.open .burger__2:after {
+  transform: rotate(-45deg);
+}
+@media (max-width: 1000px) {
+  .burger {
+    display: block;
+  }
+}
+
+.sidebar {
+  transform: translateX(-200px);
+  transition: all 0.3s ease-in;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 200px;
+  background-color: #fff;
+  color: #181818;
+  padding: 20px;
+  z-index: 5;
+}
+.sidebar ul li a {
+  font-size: 18px;
+  font-family: "Oswald", sans-serif;
+  color: #000;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.sidebar ul li a:active {
+  color: #000;
+}
+.sidebar.open {
+  transform: translateX(0px);
+}
+
+/*# sourceMappingURL=header.css.map */

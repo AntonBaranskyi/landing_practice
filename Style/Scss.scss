@@ -16,17 +16,39 @@
     background-size: cover;
   }
   &__container {
-    max-width: 815px;
-    max-height: 375px;
+    width: 815px;
+    height: 375px;
     color: white;
     position: relative;
     left: 202px;
     top: 166px;
+    @media (max-width: 1250px) {
+      position: relative;
+      left: 160px;
+      top: 120px;
+    }
+    @media (max-width: 999px) {
+      position: relative;
+      left: 80px;
+      top: 101px;
+    }
+    @media (max-width: 883px) {
+      max-width: 335px;
+      position: relative;
+      left: 0;
+      top: 101px;
+      margin: 0 auto;
+    }
   }
   &__title {
     font-size: 48px;
     font-family: 'Roboto', sans-serif;
     line-height: 56px;
+    @media (max-width: 883px) {
+      font-weight: 500;
+      font-size: 32px;
+      line-height: 38px;
+    }
   }
   &__btn {
     font-family: 'Roboto', sans-serif;
@@ -45,7 +67,11 @@
     padding: 0;
     gap: 32px;
     font-size: 26px;
-
+    @media (max-width: 883px) {
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 23px;
+    }
   }
 }
 

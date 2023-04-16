@@ -21,6 +21,19 @@
   grid-template-rows: 1fr;
   margin-bottom: 100px;
 }
+@media (max-width: 1250px) {
+  .opportunity__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+  }
+}
+@media (max-width: 601px) {
+  .opportunity__wrapper {
+    display: block;
+  }
+}
 .opportunity__item {
   position: relative;
   display: flex;
